@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Форма обратной связи</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+               <form action="#" id="form" class="form_body">
+                   <h1 class="form_title">Отправка на почту</h1>
+                   <div class="form_item">
+                       <label for="formName" class="form_label">Имя*:</label>
+                       <input id="formName" type="text" name="name" class="form_input _req">
+                   </div>
+                   <div class="form_item">
+                    <label for="formEmail" class="form_label">E-mail*:</label>
+                    <input id="formEmail" type="text" name="email" class="form_input _req _email ">
+                   </div>
+                   <div class="form_item">
+                       <label for="formMessage" class="form_label">Сообщение*:</label>
+                       <textarea name="message" id="formMessage" class="form_input _req"></textarea>
+                   </div>
+                   
+                   <div class="form_item">
+                       <div class="checkbox">
+                           <input type="checkbox" checked id="formAgreement" name="agreement" class="checkbox_input _req">
+                           <label for="formAgreement" class="checkbox_label"><span>Согласен с обработкой персональных данных</span></label>
+                       </div>
+                   </div>
+                   <button class="form_button" type="submit">Отправить</button>
+               </form> 
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
