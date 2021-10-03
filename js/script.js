@@ -9,7 +9,7 @@ async function formSend(e) {
   const formData = new FormData(form);
   
   if (error === 0) {
-    let response = await axios({
+    let response = await fetch({
       method: 'POST',
       url: '../sendmail.php',
       body: formData
